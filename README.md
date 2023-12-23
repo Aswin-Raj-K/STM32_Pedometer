@@ -27,9 +27,9 @@ Additionally, the sensor is strategically placed just above the knee to accurate
 ## Methodology
 
 The angular velocity from the sensor along the three axes is combined into its resultant value using the formula,
-
+```math
 \[ \omega = \sqrt{\omega_x^2 + \omega_y^2 + \omega_z^2} \]
-
+```
 Subsequently, the resultant angular velocity (\(\omega\)) is integrated over time using trapezoidal integration to derive the angular distance moved. The trapezoidal integration formula is expressed as follows,
 
 \[ \text{{Angular Distance}} = \sum_{n=1}^{N} \frac{1}{2} \left(\omega_{n-1} + \omega_{n}\right) \Delta t \]
