@@ -1,13 +1,4 @@
-# Embedded Systems Final Project
-
-**Authors:**
-- Aswin Raj K (ar7997)
-- Tony Yin (zy2734)
-- Yuye Li (yl12032)
-
-**Note:** Zoom in to see the plots clearly
-
----
+# Pedometer design using STM32F429I
 
 ## Introduction
 
@@ -51,14 +42,6 @@ The obtained angular distance is then multiplied by the radius of rotation (the 
 
 ## Project Details
 
-### Folder Hierarchy
-
-The project hierarchy is illustrated in Figure 1.
-
-![Project Folder Structure](Figures/ProjectHeirarchy.png)
-
-The structure includes the following components:
-
 - **I3G4250D.cpp** and **I3G4250D.h**: Libraries for the sensor, developed by us.
 - **display.cpp** and **display.h**: Contains functions for the display, implemented by us.
 - **distance.cpp** and **distance.h**: Holds functions responsible for converting angular velocity to linear distance, created by us.
@@ -67,8 +50,7 @@ The structure includes the following components:
 ### Usage
 
 1. **Download and Setup:**
-    - Download the provided zip file.
-    - Unzip the file and import the folder into the PlatformIO (PIO) platform in Visual Studio Code (VSCode).
+    - Import the folder named Pedometer into the PlatformIO (PIO) platform in Visual Studio Code (VSCode).
 
 2. **Initiate Measurement:**
     - Locate the blue lever (PA\_0) as the user input button.
@@ -100,9 +82,7 @@ The results are summarized in Table 1:
 | 450                   | 412                                |
 | 290                   | 276                                |
 
-There is a slight error in the measured distance, which can be attributed to various factors such as sensor calibration, environmental conditions, or the placement of the sensor on the leg. Calibration adjustments and further testing may be conducted to enhance the accuracy of the measurements. These results provide valuable insights for potential refinements in the design and calibration process. Sample LCD display screen is as shown in figure 2.
-
-![Sample LCD Screen display after measurement](Figures/lcdDisplay.jpg)
+There is a slight error in the measured distance, which can be attributed to various factors such as sensor calibration, environmental conditions, or the placement of the sensor on the leg. Calibration adjustments and further testing may be conducted to enhance the accuracy of the measurements. These results provide valuable insights for potential refinements in the design and calibration process.
 
 ## Conclusion
 
@@ -132,11 +112,3 @@ Addressing these aspects can contribute to the development of an advanced and re
 
 1. [Project Repository](https://github.com/Aswin-Raj-K/STM32_Pedometer.git)
 2. [Demo Video](https://www.youtube.com/watch?v=eO7r8S1gkYs)
-
----
-
-<div align="center">
-    <hr/>
-    <p>End of README</p>
-    <hr/>
-</div>
